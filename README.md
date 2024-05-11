@@ -75,7 +75,7 @@ $db->escape_string('This is an unescape "string"');
 - This string should now be safer to insert into your database through a query.
 
 
-## Close Connection
+### Close Connection
 
 - Don't forget, when you've finished playing with your database to make sure that you close the connection:
 
@@ -83,5 +83,83 @@ $db->escape_string('This is an unescape "string"');
 $db->close();
 ```
 
+### Final Conclusion
+- Using ```mysql_``` functions is a foolish move to make.
+- *Don't use these outdated and useless methods* because they're easier, or quicker.
+- Man up and tackle the new forms of database interaction - ```MySQLi```.
+  - You'll make better and secure code
 
 
+
+## 2. Bootstrap
+
+https://webtechnologies.site/files/b05/final/presentations/bootstrap-170319142352.pdf
+
+## 3. PHP to sql
+
+https://webtechnologies.site/files/b05/final/presentations/phpTOsql.pdf
+
+## 4. HTML Form
+
+### HTML forms
+- An HTML form is used to collect user input. 
+- The user input is most often sent to a server for processing.
+
+### The ```<form>``` element
+- The HTML ```<form>``` element is used to create an HTML form for user input:
+
+```html
+<form>
+    .
+    form elements
+    .
+</form>
+```
+
+### The ```<input>``` element
+- The HTML ```<input>``` element is the most used form element.
+- An ```<input>``` element can be displayed in many ways, depending on the type attribute.
+- Example
+![alt text](image.png)
+
+
+### The ```action``` attribute
+- The action attribute defines the action to be performed when the form is submitted. 
+- Usually, the form data is sent to a file on the server when the user clicks on the submit button.
+
+```html
+<form action="/action_page.php">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+</form>
+```
+
+
+### The ```method``` attribute
+- The method attribute specifies the HTTP method tobe used when submitting the form data.
+- The form-data can be sent as URL variables (with ```method="get"```) or as HTTP post transaction (with ```method="post"```).
+
+```html
+<form action="/action_page.php" method="get">
+```
+or
+```html
+<form action="/action_page.php" method="post">
+```
+
+**Notes on GET:**
+- Appends the form data to the URL, in name/value pairs
+- *NEVER use GET to send sensitive data!* (the submitted form data is
+visible in the URL!)
+- The length of a URL is limited (2048 characters)
+- Useful for form submissions where a user wants to bookmark the result
+- GET is good for non-secure data, like query strings in Google
+
+**Notes on POST:**
+- Appends the form data inside the body of the HTTP request (the
+submitted form data is not shown in the URL)
+- POST has no size limitations, and can be used to send large amounts of data.
+- Form submissions with POST cannot be bookmarked
