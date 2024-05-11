@@ -22,3 +22,26 @@ if(!$result = $db->query($sql)){
 ```
 
 ### Output Query Results
+- To loop through the results and output the username for each row on a new line
+  - Example:
+    ```php
+    while($row = $result->fetch_assoc()){
+        echo $row['username'] . '<br />';
+    }
+    ```
+    or 
+    ```php
+    while($row = $result->fetch_object()){
+        echo $row->username . '<br />';
+    }
+    ```
+### Number of returned rows
+- Each mysqli_result object that is returned has a variable defined which is called ```$num_rows```, so all we need to do is access that variable by doing:
+
+```php
+<?php
+    echo 'Total results: ' . $result->num_rows;
+?>
+```
+
+
