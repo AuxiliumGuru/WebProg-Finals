@@ -163,3 +163,18 @@ visible in the URL!)
 submitted form data is not shown in the URL)
 - POST has no size limitations, and can be used to send large amounts of data.
 - Form submissions with POST cannot be bookmarked
+
+
+# Web Prog Midterms
+
+## 1. MySQLi
+https://docs.google.com/document/d/1LY5oa3IKzZyuZhi-XRto0B7FDAjzvUm_RTrNoJu2iBE/edit?usp=sharing
+
+## 2. Javascript
+https://webtechnologies.site/javascript.pdf
+
+## 3. PHP
+https://webtechnologies.site/PHP.pdf
+
+## 4. CSS Responsive
+https://webtechnologies.site/css-responsive.pdf
