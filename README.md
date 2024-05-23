@@ -326,8 +326,180 @@ WHERE CustomerName='Alfreds Futterkiste';
 ## 2. Javascript
 https://webtechnologies.site/javascript.pdf
 
-## 3. PHP
+### ABOUT JAVASCRIPT
+- JAVASCRIPT IS A **PROGRAMMING LANGUAGE.**
+- JAVASCRIPT IS *OBJECT BASED PROGRAMMING LANGUAGE* NOT OBJECT ORIENTED.
+- JAVASCRIPT AND JAVA ARE NOT SAME.
+- JAVASCRIPT IS WEAKLY TYPED, **CLIENT SIDE** INTERPRETED LANGUAGE.
+- DESIGNED BY BRENDAN EICH FOR NETSCAPE.
+- IT WAS ORIGINALLY CALLED ```MOCHA```, RENAMED TO ```LIVESCRIPT```, AND THEN RENAMED TO ```JAVASCRIPT```. 
+- THE OFFICIAL STANDARD IS JUST CALLED **```ECMASCRIPT```**
+
+### Internal and External usage of JS in HTML
+
+- **Internal**
+  - use the ```<script>``` tag to use javascript in HTML
+  - It is internal because the ```<script>``` with js code is within the HTML document 
+```html
+<script>
+  document.getElementById("demo").innerHTML = "My First JavaScript";
+</script>
+```
+
+- **External**
+  - use also the ```script``` tag to externall add JS file in the html
+  - add the js file as the value for the ```src``` attribute
+```html
+<script src="myScript.js"></script>
+```
+
+### Display
+- ```console.log()``` statement
+  - It is used in javascript to display something (terminal)
+
+```js
+console.log("Hello, World!");
+```
+
+### Comments
+
+- Comments are used to add text in your code that isn't read by the compiler
+
+**Types of Comments used in JS**
+- ``//`` single-line comment
+
+```js
+// This is ghost of caritan
+```
+- ``/* */`` multi-line comment
+```js
+/*
+Ghost 
+of 
+Caritan
+*/
+```
+
+
+### Function
+- Functions are a block of code that can be reusable within your code
+- Designed to perform a particular task.
+- The ```function``` keyword is used to create functions in javascript followed by the function name and parenthesis (with or without arguments)
+
+
+Syntax:
+```js
+function myFunction() {
+    // Your code here
+}
+```
+- To invoke the function, just call the function followed by its argument
+
+```js
+myFunction();
+```
+
+Example:
+```js
+// Function to compute the product of p1 and p2
+function myFunction(p1, p2) {
+  return p1 * p2;
+}
+```
+ 
+
+## 3. PHP (PHP: Hypertext Preprocessor)
 https://webtechnologies.site/PHP.pdf
+### About PHP
+- It is a open-source Scripting language
+- Can contain ```text```, ```html```, ```js```, and ``php`` code
+- PHP code is executed on a server, and the result is retuned to the browser as a plain html
+
+### PHP basic syntax
+
+- A PHP SCRIPT CAN BE PLACED ANYWHERE IN THE DOCUMENT.
+- A PHP SCRIPT STARTS WITH ```<?PHP``` AND ENDS WITH ```?>```
+
+Syntax:
+```php
+<?PHP
+// PHP CODE GOES HERE
+?>
+```
+
+### Display
+- ```echo``` statement
+  - It is used to display something in php
+
+Example:
+```php
+<?php
+  echo "Hello, World!";
+?>
+```
+
+**Note:** Php statements ends with semicolon ```;``` 
+
+### Variables
+- Variables in PHP are **case-sensitive**
+- Every variable in php must starts with the dollar sign ```$```
+
+Syntax:
+```php
+<?php
+  $myVariable = "red";
+  $MyVariable = "blue";
+
+  // Note the two declared and initialized variable are different variables 
+  // $myVariable != $MyVariable
+
+?>
+
+```
+
+### Comments 
+- Comments are used to add text in your code that isn't read by the compiler
+
+**Types of Comments used in PHP**
+- ```//``` Single-line comment
+
+```php
+<?php
+// Ghost of Caritan
+?> 
+```
+
+- ```#``` also a single-line comment
+```php
+<?php
+# Ghost of Caritan
+?>
+```
+
+- ```/* */``` multi-line comment
+```php
+<?php
+/* 
+  Ghost 
+  of 
+  Caritan
+*/
+?>
+```
+
+### Concatenation 
+- in PHP, the dot ```.``` sign is used to concatenate 
+
+Example:
+```php
+<?php
+    $myVariable = "Caritan";
+    echo "Ghost of " . $myVariable;
+
+  // Output: Ghost of Caritan
+?>
+```
+
 
 ## 4. CSS Responsive
 https://webtechnologies.site/css-responsive.pdf
