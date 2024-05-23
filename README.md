@@ -193,9 +193,12 @@ Its name is a combination of:
   - ```CREATE TABLE``` - creates a new table
   - ```ALTER TABLE``` - modifies a table
   - ```DROP TABLE``` - deletes a table
+  - ```DELETE FROM``` - deletes all record without deleting the table itself
 - **INDEXING**
   - ```CREATE INDEX``` - creates an index (search key)
   - ```DROP INDEX``` - deletes an index
+
+
 
 ### SQL CRUD (Create, Read, Update, Delete)
 **1. CREATE**
@@ -331,6 +334,7 @@ https://webtechnologies.site/javascript.pdf
 - JAVASCRIPT IS *OBJECT BASED PROGRAMMING LANGUAGE* NOT OBJECT ORIENTED.
 - JAVASCRIPT AND JAVA ARE NOT SAME.
 - JAVASCRIPT IS WEAKLY TYPED, **CLIENT SIDE** INTERPRETED LANGUAGE.
+- JAVASCRIPT IS USED TO **ADD INTERACTIVITY TO THE WEB**
 - DESIGNED BY BRENDAN EICH FOR NETSCAPE.
 - IT WAS ORIGINALLY CALLED ```MOCHA```, RENAMED TO ```LIVESCRIPT```, AND THEN RENAMED TO ```JAVASCRIPT```. 
 - THE OFFICIAL STANDARD IS JUST CALLED **```ECMASCRIPT```**
@@ -347,7 +351,7 @@ https://webtechnologies.site/javascript.pdf
 ```
 
 - **External**
-  - use also the ```script``` tag to externall add JS file in the html
+  - use also the ```script``` tag to externally add JS file in the html
   - add the js file as the value for the ```src``` attribute
 ```html
 <script src="myScript.js"></script>
@@ -380,11 +384,16 @@ Caritan
 */
 ```
 
+### Variables
+- ```var``` or ```let``` or ```const``` keywords
+  - These keywords let you declare a variable in javascript
+  - These three has different functionalities
+
 
 ### Function
 - Functions are a block of code that can be reusable within your code
 - Designed to perform a particular task.
-- The ```function``` keyword is used to create functions in javascript followed by the function name and parenthesis (with or without arguments)
+- The ```function``` keyword is used to define and create functions in javascript followed by the function name and parenthesis (with or without arguments)
 
 
 Syntax:
@@ -393,7 +402,7 @@ function myFunction() {
     // Your code here
 }
 ```
-- To invoke the function, just call the function followed by its argument
+- To invoke the function, just call the function name followed by its argument
 
 ```js
 myFunction();
@@ -401,10 +410,13 @@ myFunction();
 
 Example:
 ```js
-// Function to compute the product of p1 and p2
-function myFunction(p1, p2) {
-  return p1 * p2;
+// Function to print the given argument
+function printSomething(arg) {
+  console.log("The argument is " + arg);
 }
+
+printSomething("Caritan");
+// OUTPUT: The argument is Caritan
 ```
  
 
@@ -430,6 +442,8 @@ Syntax:
 ### Display
 - ```echo``` statement
   - It is used to display something in php
+  - used to output data to the browser
+  
 
 Example:
 ```php
@@ -456,6 +470,12 @@ Syntax:
 ?>
 
 ```
+**RULES FOR PHP VARIABLES:**
+- A VARIABLE STARTS WITH THE $ SIGN, FOLLOWED BY THE NAME OF THE VARIABLE
+- A VARIABLE NAME MUST START WITH A LETTER OR THE UNDERSCORE CHARACTER
+- A VARIABLE NAME CANNOT START WITH A NUMBER
+- A VARIABLE NAME CAN ONLY CONTAIN ALPHA-NUMERIC CHARACTERS AND UNDERSCORES (A-Z, 0-9, AND _ )
+- VARIABLE NAMES ARE CASE-SENSITIVE ($AGE AND $AGE ARE TWO DIFFERENT VARIABLES)
 
 ### Comments 
 - Comments are used to add text in your code that isn't read by the compiler
@@ -499,6 +519,38 @@ Example:
   // Output: Ghost of Caritan
 ?>
 ```
+### Including External PHP file
+
+- ```include``` keyword
+  - This keyword is used in php to add external php file in your current php file
+
+Syntax:
+```php
+<?php
+  include "myFile.php";
+?>
+```
+
+### Others
+
+- ```$_SESSION``` superglobal variable
+  - It is used to store user-specific data across multiple pages
+  - It is used to store variables that are accessbile across different pages
+  
+- ```$_GET``` superglobal variable
+  - Form data sent via URL parameters
+
+- ```$_POST``` superglobal variable
+  - used to collect form data sent with the HTTP Body
+  
+- ```session_start()``` function
+  - It is used to start session in php
+
+- ```mysqli_connect()``` function
+  - a function that is used to connect to a database
+
+
+
 
 
 ## 4. CSS Responsive
